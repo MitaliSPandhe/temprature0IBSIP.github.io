@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <div class="jumbotron ">
+        <div id="heading">
+            <h2 class="active">Temprature Converter</h2>
+        </div>
+    <div class="container">
+       
+        <div id="temprature">
+            <div class="row col-md-7 mx-auto">
+            <h4>Temprature : </h4>
+            <input type="number" placeholder="Degree(&deg;C)" id="inputvalue">
+        </div>
+    </div>
+    </div> 
+     <div class="container">
+        <div id="celsius">
+            <div class="row col-md-6 mx-auto">
+            <h4>Convert from :</h4>
+            <label  id="lab">
+				<select id="sel">
+					<option value="C" class="active">Celsius</option>
+					<option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+				</select>
+            </label>
+			</div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="fahrenheit">
+            <div class="row col-md-6 mx-auto">
+            <h4>Convert to &nbsp;&nbsp;&nbsp; :</h4>
+            <label  id="lab1">
+				<select id="sel1">
+					<option value="F">Fahrenheit</option>
+					<option value="C">Celsius</option>
+                    <option value="K">Kelvin</option>
+                   
+				</select>
+            </label>
+			</div>
+        </div>
+     </div>
+     <div class="container">
+        <div id="result">
+            <div class="row col-md-6 mx-auto">
+            <h4>Result &nbsp;: </h4>
+            <label for="res" id="res"></label>
+        </div>
+    </div>
+    </div>
+   <div class="container">
+        <div class="row col-md-3 mx-auto">
+            <div id="button">
+            <button type="submit" class="btn" id="buton" onclick="temprature()">Convert</button>
+            <button type="reset"  value="submit" class="btn" id="reset">Reset</button>
+        </div>
+        </div>
+    </div> 
+</div>
+<script src="script.js"></script>
+</body>
+</html>
